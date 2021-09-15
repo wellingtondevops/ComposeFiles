@@ -1,0 +1,125 @@
+version: '3'
+services:
+
+
+ codau_01:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: integrador
+   WORKFY_KEY_DBInfo_PASSWORD: edmonton
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: CODAU
+   DOC_TYPE_SEGMENTATION_FLAG: C1
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Documentos/workfy/sstor/REPOSITORIO
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 81:8080
+
+  command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-1561-20210304.jar
+  container_name:  CODAU_01
+
+#  codau_02:
+#   build: .
+#   command: /bin/bash
+#   environment:
+#    WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+#    WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+#    WORKFY_KEY_DBInfo_PORT: 1433cd 
+#    WORKFY_KEY_DBInfo_IP: 192.168.0.2
+#    WORKFY_KEY_DBInfo_USER: sa
+#    WORKFY_KEY_DBInfo_PASSWORD: !@$m4rt$c4n@!
+#    WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+#    WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+#    WORKFY_KEY_IntegrationKey_INSTANCE: CODAU
+#    DOC_TYPE_SEGMENTATION_FLAG: C2
+#    WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Documentos/workfy/REPOSITORIO
+
+#   volumes:
+#    -  /home/:/home/
+#   ports:
+#    - 82:8080
+
+#   command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-DATA_SEND_TARGET.jar
+#   container_name:  CODAU_02
+
+#  codau_03:
+#   build: .
+#   command: /bin/bash
+#   environment:
+#    WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+#    WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+#    WORKFY_KEY_DBInfo_PORT: 1433
+#    WORKFY_KEY_DBInfo_IP: 192.168.0.2
+#    WORKFY_KEY_DBInfo_USER: sa
+#    WORKFY_KEY_DBInfo_PASSWORD: !@$m4rt$c4n@!
+#    WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+#    WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+#    WORKFY_KEY_IntegrationKey_INSTANCE: CODAU
+#    DOC_TYPE_SEGMENTATION_FLAG: C3
+#    WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Documentos/workfy/REPOSITORIO
+
+#   volumes:
+#    -  /home/:/home/
+#   ports:
+#    - 83:8080
+
+#   command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-DATA_SEND_TARGET.jar
+#   container_name:  CODAU_03
+
+#  codau_04:
+#   build: .
+#   command: /bin/bash
+#   environment:
+#    WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+#    WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+#    WORKFY_KEY_DBInfo_PORT: 1433
+#    WORKFY_KEY_DBInfo_IP: 192.168.0.2
+#    WORKFY_KEY_DBInfo_USER: sa
+#    WORKFY_KEY_DBInfo_PASSWORD: !@$m4rt$c4n@!
+#    WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+#    WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+#    WORKFY_KEY_IntegrationKey_INSTANCE: DANIEL
+#    DOC_TYPE_SEGMENTATION_FLAG: C4
+#    WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Documentos/workfy/REPOSITORIO
+
+#   volumes:
+#    -  /home/:/home/
+#   ports:
+#    - 84:8080
+
+#   command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-BIOS.jar
+#   container_name:  CODAU_04
+
+
+
+
+#  codau_05:
+#   build: .
+#   command: /bin/bash
+#   environment:
+#    WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+#    WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+#    WORKFY_KEY_DBInfo_PORT: 1433
+#    WORKFY_KEY_DBInfo_IP: 192.168.0.2
+#    WORKFY_KEY_DBInfo_USER: sa
+#    WORKFY_KEY_DBInfo_PASSWORD: !@$m4rt$c4n@!
+#    WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+#    WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+#    WORKFY_KEY_IntegrationKey_INSTANCE: DANIEL
+#    DOC_TYPE_SEGMENTATION_FLAG: C5
+#    WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Documentos/workfy/REPOSITORIO
+
+#   volumes:
+#    -  /home/:/home/
+#   ports:
+#    - 85:8080
+
+#   command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-BIOS.jar
+#   container_name:  CODAU_05

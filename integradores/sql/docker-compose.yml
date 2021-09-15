@@ -1,0 +1,15 @@
+version: '3'
+services:
+ db:
+  image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+  restart: always
+  environment:
+   ACCEPT_EULA: Y
+   MSSQL_LCID: 1046
+   SA_PASSWORD: Smartscan_edmonton
+   MSSQL_COLLATION: 'Latin1_General_CP850_CI_AI'
+   SQLCOLLATION: 'Latin1_General_CP850_CI_AI'
+  volumes:
+   -  /home/wellington/Documentos/workfy/DATA:/var/opt/mssql/data
+  ports:
+   - 1432:1433

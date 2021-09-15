@@ -1,0 +1,41 @@
+version: '3'
+services:
+
+
+
+ smart01:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: sa
+   WORKFY_KEY_DBInfo_PASSWORD: edmonton
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: 0001_SMARTSCAN_PRODUCTION
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Documentos/workfy/ss_ged
+
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 81:8080  
+  
+  command: java -jar /home/wellington/Documentos/novo_integrador/
+  container_name:  CONTAINER_SMART01
+
+ db:
+
+  image: microsoft/mssql-server-linux
+  restart: always
+  environment:
+   ACCEPT_EULA: Y
+   SA_PASSWORD: edmonton   
+  volumes:
+   -  /home/wellington/Documentos/workfy/DATA:/var/opt/mssql/data
+  ports:
+   - 1433:1433
+
+ 

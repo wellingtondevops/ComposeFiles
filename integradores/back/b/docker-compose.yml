@@ -1,0 +1,90 @@
+version: '3'
+services:
+
+
+
+ smart01:
+  build: .
+  command: apt-get install ntpdate -y
+  command: ntpdate -u ntp.usp.br 
+  command: /bin/bash
+  volumes:
+   -  /home/:/home/
+  #links:
+   #- db:iwfsgicodau1 
+  ports:
+   - 81:8080
+  command: chmod -R 777 /home/wellington/Documentos/workfy/m1
+  command: touch /home/wellington/Documentos/workfy/m1/log.txt
+  command: java -jar /home/wellington/Documentos/workfy/m1/APP-WORKFY-SGI_INTEGRATION-0001_SMARTSCAN_PRODUCTION_QUERY_PAGED.jar  | tee /home/wellington/Documentos/workfy/m1/log.txt                                                            
+  container_name:  CONTAINER_SMART01
+
+ smart02:
+
+  build: .
+  command: apt-get install ntpdate -y
+  command: ntpdate -u ntp.usp.br 
+  command: /bin/bash
+  volumes:
+   -  /home/:/home/
+  #links:
+   #- db:iwfsgicodau1 
+  ports:
+   - 82:8080
+  command: chmod -R 777 /home/wellington/Documentos/workfy/m2
+  command: touch /home/wellington/Documentos/workfy/m2/log.txt
+  command: java -jar /home/wellington/Documentos/workfy/m2/APP-WORKFY-SGI_INTEGRATION-0002_SMARTSCAN_PRODUCTION_QUERY_PAGED_vs2.jar  | tee /home/wellington/Documentos/workfy/m2/log.txt
+  container_name:  CONTAINER_SMART02
+
+ smart03:
+  build: .
+  command: apt-get install ntpdate -y
+  command: ntpdate -u ntp.usp.br 
+  command: /bin/bash
+  volumes:
+   -  /home/:/home/
+  #links:
+   #- db:iwfsgicodau1 
+  ports:
+   - 83:8080
+  command: chmod -R 777 /home/wellington/Documentos/workfy/m3
+  command: touch /home/wellington/Documentos/workfy/m3/log.txt
+  command: java -jar /home/wellington/Documentos/workfy/m3/APP-WORKFY-SGI_INTEGRATION-0003_SMARTSCAN_PRODUCTION_QUERY_PAGED_vs2.jar  | tee /home/wellington/Documentos/workfy/m3/log.txt
+  container_name:  CONTAINER_SMART03
+
+ smart04:
+  build: .
+  command: apt-get install ntpdate -y
+  command: ntpdate -u ntp.usp.br 
+  command: /bin/bash
+  volumes:
+   -  /home/:/home/
+  #links:
+   #- db:iwfsgicodau1
+  ports:
+   - 84:8080
+  command: chmod -R 777 /home/wellington/Documentos/workfy/m4
+  command: touch /home/wellington/Documentos/workfy/m4/log.txt
+  command: java -jar /home/wellington/Documentos/workfy/m4/APP-WORKFY-SGI_INTEGRATION-0004_SMARTSCAN_PRODUCTION_QUERY_PAGED_vs2.jar | tee /home/wellington/Documentos/workfy/m4/log.txt
+  container_name:  CONTAINER_SMART04
+
+ smart05:
+  build: .
+  command: apt-get install ntpdate -y
+  command: ntpdate -u ntp.usp.br 
+  command: /bin/bash
+  volumes:
+   -  /home/:/home/
+  #links:
+   #- db:iwfsgicodau1
+  ports:
+   - 85:8080
+  command: chmod -R 777 /home/wellington/Documentos/workfy/m5 
+  command: touch /home/wellington/Documentos/workfy/m5/log.txt
+  command: java -jar /home/wellington/Documentos/workfy/m5/APP-WORKFY-SGI_INTEGRATION-0005_SMARTSCAN_PRODUCTION_QUERY_PAGED_vs2.jar  | tee /home/wellington/Documentos/workfy/m5/log.txt
+                                                              
+  container_name:  CONTAINER_SMART05
+
+ 
+
+ 

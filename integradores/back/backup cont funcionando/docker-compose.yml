@@ -1,0 +1,20 @@
+version: '3'
+services:
+
+
+
+ 
+
+ db:
+  build: .
+  command: /bin/bash  
+  restart: always
+  environment:
+   ACCEPT_EULA: Y
+   SA_PASSWORD: edmonton   
+  volumes:
+   -  /home/wellington/Documentos/workfy/DATA:/var/opt/mssql/data
+  ports:
+   - 1433:1433
+
+ 

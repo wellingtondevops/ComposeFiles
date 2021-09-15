@@ -1,0 +1,87 @@
+ .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.7.RELEASE)
+
+2019-01-23 15:16:20.149  INFO 1 --- [           main] i.w.integration.sgi.ApplicationConfig    : Starting ApplicationConfig vLOOP-SELECT-FLAG-env-keys-1.0 on ce89b70ab9ea with PID 1 (/home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar started by root in /)
+2019-01-23 15:16:20.158  INFO 1 --- [           main] i.w.integration.sgi.ApplicationConfig    : No active profile set, falling back to default profiles: default
+2019-01-23 15:16:21.202  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c97a5: startup date [Wed Jan 23 15:16:21 UTC 2019]; root of context hierarchy
+2019-01-23 15:16:28.574  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-23 15:16:28.646  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-23 15:16:28.659  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-01-23 15:16:29.002  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-23 15:16:29.002  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7806 ms
+2019-01-23 15:16:29.569  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-23 15:16:29.582  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-23 15:16:29.583  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-23 15:16:29.583  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-23 15:16:29.584  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-23 15:16:29.854  INFO 1 --- [g-Init-Reporter] com.mchange.v2.log.MLog                  : MLog clients using slf4j logging.
+2019-01-23 15:16:29.977  INFO 1 --- [           main] com.mchange.v2.c3p0.C3P0Registry         : Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+2019-01-23 15:16:30.654  INFO 1 --- [           main] c.m.v.c.i.AbstractPoolBackedDataSource   : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqrg1xa0y7g7el1112v5x|78047b92, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.microsoft.sqlserver.jdbc.SQLServerDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqrg1xa0y7g7el1112v5x|78047b92, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:sqlserver://192.168.0.2:1433;databaseName=SisDoc_0001, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300000, maxStatements -> 10000, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {jdbcUrl=jdbc:sqlserver://192.168.0.2:1433;databaseName=SisDoc_0001, serverName=192.168.0.2, hibernate.use_sql_comments=true, maxPoolSize=300000, maxStatements=10000, hibernate.format_sql=true, Password=edmonton, testConnectionOnCheckout=true, databaseName=SisDoc_0001, URL=jdbc:sqlserver://192.168.0.2:1433;databaseName=SisDoc_0001, User=sa, driverClass=com.microsoft.sqlserver.jdbc.SQLServerDriver, hibernate.show_sql=true, portNumber=1433, minPoolSize=10}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-01-23 15:16:30.725  WARN 1 --- [           main] c.m.v2.resourcepool.BasicResourcePool    : Bad pool size config, start 3 < min 10. Using 10 as start.
+2019-01-23 15:16:32.975  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-23 15:16:33.060  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-23 15:16:33.553  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-01-23 15:16:33.558  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-01-23 15:16:33.572  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-01-23 15:16:33.755  INFO 1 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-23 15:16:35.100  INFO 1 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2008Dialect
+2019-01-23 15:16:36.238  WARN 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.DuplicateMappingException: Duplicate query mapping TbArquivo.findByDocumentoNotExported
+2019-01-23 15:16:36.248  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-01-23 15:16:36.306  INFO 1 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-01-23 15:16:36.351 ERROR 1 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.DuplicateMappingException: Duplicate query mapping TbArquivo.findByDocumentoNotExported
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar!/:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar!/:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar!/:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar!/:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar!/:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar!/:1.5.7.RELEASE]
+	at it.workfy.integration.sgi.ApplicationConfig.main(ApplicationConfig.java:25) [classes!/:LOOP-SELECT-FLAG-env-keys-1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar:LOOP-SELECT-FLAG-env-keys-1.0]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar:LOOP-SELECT-FLAG-env-keys-1.0]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) [APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar:LOOP-SELECT-FLAG-env-keys-1.0]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) [APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar:LOOP-SELECT-FLAG-env-keys-1.0]
+Caused by: org.hibernate.DuplicateMappingException: Duplicate query mapping TbArquivo.findByDocumentoNotExported
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.checkQueryName(InFlightMetadataCollectorImpl.java:555) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.applyNamedQuery(InFlightMetadataCollectorImpl.java:549) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.addNamedQuery(InFlightMetadataCollectorImpl.java:545) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.cfg.annotations.QueryBinder.bindQuery(QueryBinder.java:76) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.cfg.annotations.QueryBinder.bindQueries(QueryBinder.java:218) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindQueries(AnnotationBinder.java:358) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:533) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:245) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265) ~[hibernate-core-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) ~[hibernate-entitymanager-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) ~[hibernate-entitymanager-5.0.12.Final.jar!/:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.11.RELEASE.jar!/:4.3.11.RELEASE]
+	... 24 common frames omitted

@@ -1,0 +1,156 @@
+version: '3'
+services:
+
+
+ girolando_09:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: sa
+   WORKFY_KEY_DBInfo_PASSWORD: edmonton
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: GIROLANDO
+   DOC_TYPE_SEGMENTATION_FLAG: G9
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Girolando
+
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 81:8080  
+  
+  command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-LOOP-env-keys-local-flagger-1.0.jar
+  container_name:  GIROLANDO_09 
+
+ girolando_10:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: sa
+   WORKFY_KEY_DBInfo_PASSWORD: edmonton
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: GIROLANDO
+   DOC_TYPE_SEGMENTATION_FLAG: G10
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Girolando
+
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 82:8080  
+  
+  command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar
+  container_name:  GIROLANDO_10
+
+ girolando_11:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: sa
+   WORKFY_KEY_DBInfo_PASSWORD: edmonton
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: GIROLANDO
+   DOC_TYPE_SEGMENTATION_FLAG: G11
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Girolando
+
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 83:8080  
+  
+  command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar
+  container_name:  GIROLANDO_11
+
+ girolando_12:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: sa
+   WORKFY_KEY_DBInfo_PASSWORD: edmonton
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: GIROLANDO
+   DOC_TYPE_SEGMENTATION_FLAG: G12
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Girolando
+
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 84:8080  
+  
+  command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar
+  container_name:  GIROLANDO_12
+ 
+ girolando_13:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: sa
+   WORKFY_KEY_DBInfo_PASSWORD: edmonton
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: GIROLANDO
+   DOC_TYPE_SEGMENTATION_FLAG: G13
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Girolando
+
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 85:8080  
+  
+  command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar
+  container_name:  GIROLANDO_13
+
+ girolando_14:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: sa
+   WORKFY_KEY_DBInfo_PASSWORD: edmonton
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: GIROLANDO
+   DOC_TYPE_SEGMENTATION_FLAG: G14
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Girolando
+
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 8081:8080  
+  
+  command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-LOOP-SELECT-FLAG-env-keys-1.0.jar
+  container_name:  GIROLANDO_14
+
+
+
+ 
+
+
+  
+
+ 

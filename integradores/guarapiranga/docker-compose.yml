@@ -1,0 +1,27 @@
+version: '3'
+services:
+
+
+ guara_02:
+  build: .
+  command: /bin/bash
+  environment:
+   WORKFY_KEY_DBInfo_CATALOG: SisDoc_0001
+   WORKFY_KEY_DBInfo_DB_NAME: SisDoc_0001
+   WORKFY_KEY_DBInfo_PORT: 1433
+   WORKFY_KEY_DBInfo_IP: 192.168.0.2
+   WORKFY_KEY_DBInfo_USER: sa
+   WORKFY_KEY_DBInfo_PASSWORD: !@$m4rt$c4n@!
+   WORKFY_KEY_JobDataPath_MAIN_PATH: http://workfyserver.mircloud.host:8080/workfy-sgi-data/ws/data/
+   WORKFY_KEY_MainPath_URL: http://workfyserver.mircloud.host:8080/workfy/ws/
+   WORKFY_KEY_IntegrationKey_INSTANCE: CHAPEUZINHOVERMELHO
+   DOC_TYPE_SEGMENTATION_FLAG: G2
+   WORKFY_KEY_JobAttachmentSubmiter_MAIN_CONTAINER_PATH: /home/wellington/Documentos/workfy/Guara
+   WORKFY_KEY_IntegrationKey_TARGET: DOCUMENT_FIELD_WORKFLOW_GEN
+  volumes:
+   -  /home/:/home/
+  ports:
+   - 8001:8080
+
+  command: java -jar /home/wellington/Documentos/novo_integrador/APP-WORKFY-SGI-INTEGRATION-DATA_SEND_TARGET.jar
+  container_name:  GUARAPIRANGA_2
